@@ -80,7 +80,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
       - name: Download sqlite3
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: sqlite3
           path: /tmp/sqlite/out/
@@ -151,7 +151,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
       - name: Download sqlite3
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: sqlite3
           path: drift/.dart_tool/sqlite3/
@@ -232,7 +232,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1
       - name: Download sqlite3
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: sqlite3
           path: /tmp/sqlite/out/
@@ -283,7 +283,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
       - name: Download sqlite3
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: sqlite3
           path: /tmp/sqlite/out/
@@ -310,7 +310,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
       - name: Download sqlite3
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: sqlite3
           path: /tmp/sqlite/out/
@@ -349,11 +349,11 @@ jobs:
 #      - run: dart pub upgrade
 #        name: "Setup coverage processor"
 #        working-directory: extras/tooling
-#      - uses: actions/download-artifact@v2
+#      - uses: actions/download-artifact@v4.1.7
 #        with:
 #          name: moor-coverage-data
 #          path: moor/
-#      - uses: actions/download-artifact@v2
+#      - uses: actions/download-artifact@v4.1.7
 #        with:
 #          name: sqlparser-coverage-data
 #          path: sqlparser/
